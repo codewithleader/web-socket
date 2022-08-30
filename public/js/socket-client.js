@@ -35,7 +35,7 @@ btnSend.addEventListener('click', () => {
   };
 
   // Emit to the server's client-message event
-  socket.emit('client-message', payload, id => {
-    console.log('From server:', id);
+  socket.emit('client-message', payload, resp => {
+    console.log('From server:', resp);
   });
 });

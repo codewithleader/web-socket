@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "Web Socket using Node, Express and Socket.io",
   "main": "app.js",
-  "author": "Elis Antonio Perez <elisperezmusic@gmail.com> (https://www.instagram.com/elisperezmusic)",
+  "author": {
+    "name": "Elis Antonio Perez",
+    "email": "elisperezmusic@gmail.com"
+  },
   "license": "MIT",
   "dependencies": {
     "cors": "^2.8.5",

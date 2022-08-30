@@ -1,3 +1,6 @@
+/**
+ ** This is the SERVER SIDE of the socket.
+ */
 const socketController = socket => {
   console.log('Client connected', socket.id);
 
@@ -7,14 +10,17 @@ const socketController = socket => {
 
   // Listen to the client's event with .on
   socket.on('client-message', (payload, callback) => {
-    const id = 123456789;
-    callback(id);
+    const resp = {
+      status: 'ok',
+      message: `This is the Response from Server of the Request from Client with ID: ${socket.id}`,
+    };
+    callback(resp);
 
     // Emit to all clients with broadcast.emit
     socket.broadcast.emit('server-message', payload);
-  })
-}
+  });
+};
 
 module.exports = {
-  socketController
-}
+  socketController,
+};

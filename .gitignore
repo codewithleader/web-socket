@@ -2,6 +2,9 @@
 .vscode/
 .vscode/settings.json
 
+#Lock
+package-lock.json
+
 # Logs
 logs
 *.log
