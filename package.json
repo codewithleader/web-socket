@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Web Socket using Node, Express and Socket.io",
   "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
   "author": {
     "name": "Elis Antonio Perez",
     "email": "elisperezmusic@gmail.com"
